@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .moon{
+        background-color: black;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+
+margin: 20em;
+    }
+    .moon::before{
+        content:"";
+        background-color: #ffff;
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        animation: 3.2s moon linear infinite alternate;
+    }
+    /* .moon:hover{
+        transition: 7s ease;
+        transform: scale(0.9,1.02);
+    transform: translateX(40px);
+    }
+   */
+    @keyframes moon {
+        0%{
+            transform: translateX(40px) scale(0.9);
+            box-shadow: none;
+        }
+        50%{
+            transform: translate(0px,0px) scale(1.02);
+            box-shadow: 0 0 10px #ffff,0 0 80px  2px #ffff;
+        }
+        100%{
+            transform: translateX(-40px)scale(0.9);
+            box-shadow: none;
+        }
+    }
+</style>
+<body>
+    <div class="moon"></div>
+</body>
+</html>

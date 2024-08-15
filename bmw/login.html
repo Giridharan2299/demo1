@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        filter: brightness(100%);
+        
+    }
+.total{
+    margin: 100px;
+    font-family: sans-serif;
+    align-items: justify;
+   position: relative; 
+}
+input:focus:not(.Register){
+    border: 1px solid red;
+    outline: 1px solid red;
+}
+.sub{
+    margin: 0px 0px 30px;
+}
+.sub .bmw{
+    font-size: 32px;
+    color: rgb(44,62,80);
+    margin: 0px 0px 10px;
+    font-weight: 100;
+
+}
+.more{
+    color: rgb(44,62,80);
+}
+input:focus:not(.Register){
+    background-color: pink ;
+}
+form .continue{
+    width: 370px;
+    height: 7vh;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color:#2478f0;
+    opacity: 0.3;
+    border: none;
+    color: white;
+    margin: 0px 0px 17px;
+    
+}
+input:not(.Register){
+    height: 5vh;
+    width: 360px;
+    margin: 0px 0px 34px;
+}
+form .Register{
+width: 370px;
+height: 6.5vh;
+font-size: 16px;
+color: black;
+font-weight: 750;
+border: 1px solid black;
+margin: 0px 0px 10px;
+}
+span{
+    text-decoration: underline;
+    color: black;
+    font-weight: 750;
+}
+span:hover{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.Register:hover{
+    outline: 1px solid black;
+    cursor: pointer;
+
+}
+p{
+    color: rgb(66,65,66);
+    font-size: 13px;
+    margin: 0px 0px 100px;
+}
+img{
+
+position:absolute;
+top: -110px;
+
+    margin-left: 500px;
+}
+.total ins:hover{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.circle{
+float: right;
+right: 0;
+margin-top: 40px;
+flex-wrap: wrap;
+position: absolute;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+</style>
+<body>
+  
+    <div class="total">
+        
+        <div class="sub one">
+                  <div class="bmw">BMW ID LOGIN</div>
+        <div class="more">Don't have a BMW ID? Register <span>here.</span></div>
+    </div>
+  
+        <div>
+            <form action=""  method="get">
+                <label for="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: 100px;">BMW ID (email address)</label><br>
+                <input    type="text" name="" ><br>
+
+              <a href="bmw.html"> <button             class="continue">continue
+            </a> 
+              </button><br>
+              <a href="register.html">  <input type="button"       class="Register" value="Register now"></input></a>
+                <div>             <img src="bmw_background.png" alt="" width="870px" height="735px">
+                    <img src="g.png" alt="" class="circle" width="65px">
+                </div>
+
+            </form>
+       
+
+        </div>
+        <p>This page uses hCaptcha for more details check either <br> Data privacy Or legal notice</p>
+
+        <ins>Data privacy</ins>
+       
+    </div>
+    
+</body>
+</html>

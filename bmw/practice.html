@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+
+        /* background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
+    }
+    ins{
+        color: whitesmoke;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-right: 100px;
+    }
+    form{
+        text-align: center;
+        line-height: 2.5;
+        border: 2px solid white;
+        width: 400px;
+        height: 400px;
+        border-radius: 70px;justify-content: center;
+        padding: 30px;
+        margin: auto;
+        opacity: 0.9;
+        background-attachment: fixed;
+        position: relative;
+        top: -100px;
+        left: 70px;
+
+        background-repeat: no-repeat;
+    }
+    input{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        border: none;
+    
+    
+    }
+    .check{
+        margin-right: 12em;
+        padding: 10px;
+    top: 200px;
+    }
+    input:hover{
+background-color:red;
+    }
+  
+
+    .submit{
+        padding: 10px;
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+        margin: 30px;
+        font-size:20px;
+             background-color: black;
+        color: white;
+        border: none;
+        text-transform:uppercase;
+        cursor: pointer;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .submit:hover
+    {
+        background-color: red;
+    }
+
+    .submit:focus{
+        border: 2px solid red;
+        outline: 2px solid red;
+    }
+
+
+    form:focus{
+        border: 2px solid yellowgreen;
+        outline: 2px solid yellowgreen;
+    }
+
+    .moon{
+        background-color: black;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+margin: 3em;
+    }
+    .moon::before{
+        content:"";
+        background-color: #ffff;
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        animation: 3.2s moon linear infinite alternate;
+        
+    }
+
+    .error input{
+        border-color: red;
+    }
+    /* .moon:hover{
+        transition: 7s ease;
+        transform: scale(0.9,1.02);
+    transform: translateX(40px);
+    }
+   */
+    @keyframes moon {
+        0%{
+            transform: translateX(40px) scale(0.9);
+            box-shadow: none;
+        }
+        50%{
+            transform:  scale(1.02);
+            box-shadow: 0 0 100px #ffff,0 0 80px  2px #ffff;
+        }
+        100%{
+            transform: translateX(-40px)scale(0.9);
+            box-shadow: none;
+        }
+    }
+  
+</style>
+
+<body>
+  <div class="moon"></div>
+    <form        action="data.php" method="post" name="form" >
+      <ins>  username:</ins><br>
+        <input     type="text" name="username"        placeholder="username"  required><br>
+        <ins>password:</ins><br>
+        <input               type="password" name="password"      placeholder="password" required><br>
+   
+
+       <input  class="submit" type="submit"  name=""    onclick="check()"      value="submit" >
+      
+    
+    </form>
+    <script>
+//         const form =document.getElementById('form');
+//         const username = document.getElementById('username');
+//         const email = document.getElementById('password');
+// form.addEventListener('submit',e=>{
+//     e.preventDefault();
+//     validateInputs();
+// });
+// const setError = (Element, message) => {
+//     const inputControl = Element.parentElement;
+//     const errorDisplay =inputControl.querySelector('.error');
+
+//     errorDisplay.innerText = message;
+//     inputControl.classList = add('error');
+//     inputControl.classList = remove('success')
+
+
+// }
+
+// const setSuccess = element =>{
+//   const inputControl = element.parentElement;
+//   const errorDisplay = inputControl.querySelector('.error');
+//   errorDisplay.innerText = '';
+//   inputControl.classList.add('success');
+//   inputControl.classList.remove('error');
+// };
+// const validateInputs = ()=> {
+//     const usernameValue = username.value.trim();
+//     const passwordValue = password.value.trim();
+//     if(usernameValue === ''){
+//         setError(username,'username is required');
+// }
+// else{
+//  setSuccess(username);
+
+// }
+// if(emailValue === ''){
+//     setError(email,'Email is requied')
+// }else if(passwordValue.length<8){
+//     setError(password,'password must be at least 8 character.')
+
+// }
+// };
+
+function check(){
+    var username =document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if(username == "admin" && password=="user")
+{
+    alert("login success fully")
+    return false;
+}
+else{
+    alert("login falied");
+    return true;
+}
+}
+    </script>
+
+   
+</body>
+</html>

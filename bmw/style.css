@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+    width: 100%;
+    position: fixed;
+}
+
+
+.container{
+    z-index: 1;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: whitesmoke;
+  padding: 0 100px 500px;
+ 
+}
+
+.list{
+    
+    display: flex;
+    margin-right:100px;
+    position: absolute;
+    top: 1em;
+    text-transform: capitalize;
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 5px;
+    position: relative;
+
+}
+
+
+    
+.car{
+    position: absolute;
+    top:0;
+    background-color: black;
+    left: 10em;
+}
+
+li a{
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+  
+    
+}
+
+.dropdown ,li ,a{
+    display: flex;
+    display: block;
+    list-style-type: none;
+    padding: px;
+    font-size: 20px;
+
+
+}
+
+.dropdown {
+    display: none;
+    color: black;
+    position: absolute;
+    left: 30em;
+
+}
+
+/* .list li list hover :nth-child(5) display block */
+ .list li:hover:nth-child(5) .dropdown {
+
+    display: block;
+    position: fixed;
+
+
+
+} 
+.bmw{
+    color: white;
+    cursor: pointer;
+    position: relative;
+    display: fixed;
+
+}
+
+
+.black{
+    color:rgb(115,115,115);
+    font-size: 15px;
+}
+
+.black:hover{
+    color: blue;
+}
+
+
+.bmw:hover{
+    color: black;
+}
+.ch:hover{
+line-height:1;
+color: blue;
+
+}
+
+
+
+
+
+.list li:hover{
+    /* border-bottom: 3px solid rgb(28,105,212); border-bottom-width: 5px; */
+    top: 2px;;
+transition: 0.30s ease ;
+
+}
+.dropdown,li,a:hover{
+    color: black;
+    font-weight: 500;
+    
+}
+
+
+.icon{
+    padding: 8px;
+    color: whitesmoke;
+    z-index:1;
+    margin-left: 13em;
+}
+
+
+.container{
+    padding: 20px;
+}
+
+.icon:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+ 
+
+.img{
+    z-index: 1;
+} 
+
+
+
+
+.row{
+    cursor: pointer;
+    position: absolute;
+    top:66px;
+}
+.morebmw{
+    display: none;
+}
+
+.bmw li:hover:nth-child(1) .bmwmore{
+display: block;
+}
+
+hr{
+    width: 500px;
+}
+

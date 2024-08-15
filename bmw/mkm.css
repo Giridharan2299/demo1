@@ -1,0 +1,142 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    min-height: 100vh;
+    background:black;
+    overflow: hidden;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color: white;
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+  nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .main{
+    width: 100%;
+  display: flex;
+  line-height: 0.1;
+  
+  }
+  
+  .content{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color:whitesmoke;
+    overflow: hidden;
+    animation:content 2s ease-in-out;
+  }
+  button{
+    padding: 20px 40px;
+    margin: 5px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-top: none;
+    border-left: none;
+    transition: 0.2s ease;
+  
+  }
+  
+  .content h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-family: sans-serif;
+  }
+  .content p{
+   font-size: 20px;
+   margin-bottom: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  .content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  button:hover{
+    background-color:rgb(255,0, 0);
+  }
+  
+  .image{
+    float: right;
+   margin: 50px 30px;
+  display: flex; 
+   
+  }
+  
+  
+  video{
+    width: 40rem;
+    animation: car 2s ease-in-out;
+    overflow: hidden;
+  background-clip: hidden;
+  animation-iteration-count: 2;
+  animation-fill-mode:both;
+  animation-delay: 2s;
+  animation-direction:unset;
+  
+  }
+  @keyframes car{
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(-300%);
+    }
+   }
+   @keyframes content{
+    0%{transform: translateX(100%);
+  
+    }
+    0%{
+      transform: translateX(-220%);
+    }
+  } 
+    
+  @media  screen and (max-width:"1200px"){
+    .content{
+    width:100%;
+    text-align:center;
+    }
+  
+  
+  
+    .image{
+      width: 100%;
+      position: absolute;
+      bottom: -5;
+      display: flex;
+      text-align: center;
+  z-index: -1;
+    }
+  } 
+  nav li:hover{
+    color:red;
+    transition: 0.7s ease;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  nav a{
+    text-decoration: none;
+    color:  white;
+  }

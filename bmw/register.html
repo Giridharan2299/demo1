@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .total{
+        margin: 80px;
+
+
+    
+    }
+    h4{
+        color: rgb(44,62,80);
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: 200;
+    }
+
+
+body{}
+    form{
+        line-height: 2;
+        color: rgb(44,62,80);
+        text-transform: capitalize;
+        font-family: sans-serif;
+        
+        position: relative;
+        top: -40PX;
+    }
+    .id{
+        color: rgb(44,62,80);
+        margin: 0px 0px 30px;
+    }
+    input:not(.check){
+        width: 300px;
+        height: 5vh;
+    }
+    .register{
+        width: 310px;
+        height: 45px;
+        text-transform: capitalize;
+        background-color: #2478f0;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 20px;
+        opacity: 0.4;
+
+    }
+     ins{
+        color: black;
+        text-decoration: underline;
+        font-weight: 800;
+        
+
+    }
+    input:checked p{
+        display: none !important;
+
+    }
+    input:focus:not(.check){
+        border: 1px solid red;
+        outline: 1px solid red;
+    }
+    input:focus:not(.check){
+        background-color: pink;
+    }
+    select{
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+        color:rgb(44,62,86);
+        line-height: 40;
+    }
+    a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .img{
+        float: right;
+        right: 0;
+        top: 0;
+        position: absolute;
+
+    }
+    .sticky{
+        position: absolute;
+        top: 20px;
+        position: fixed;
+    }
+    span{
+        text-decoration: underline;
+        color: black;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    option{
+        height:400px;
+
+    }
+    input[type="checkbox"]{
+        height: 25px;
+        width: 25px;
+    
+               border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        
+    }
+    input[type="checkbox"]:focus{
+        border: 2px solid red;
+        outline: 2px solid red;
+        background-color:transparent;
+    }
+    span{
+        position: relative;
+        ;
+
+    
+}
+select{
+    outline: none;
+    
+}
+sup{
+    color: red;
+    font-size: 16px;
+}
+aside{
+    margin:0px 0px 0px 35px ;
+}
+span:hover{
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+</style>
+<body>
+
+    <div class="total">
+        
+<div class="img">
+    <img src="bmw_background.png" alt="" width="850px" height="720px">
+</div>
+<div class="sticky"><h4>BMW <br> REGISTRATION</h4>
+<div class="id">Already have a BMW ID? Login    <a href="id.html">  <ins>here.</ins></a> </div>
+<div>
+    <form action="" id="form">
+        <label for="">solution<sup>*</sup></label><br>
+        <select name="" id="">
+            <option value="gfgxdh" >select</option>
+            <hr>
+            <option value="">Dr.</option>
+             <br>
+             <br>
+            <option value="">Miss.</option>
+            <option value="">Mr.</option>
+            <option value="">Mrs.</option>
+            <option value="">Ms.</option>
+        </select><br>
+        <label for="">firstname<sup>*</sup></label><br>
+        <input type="text" placeholder="!"><br>
+        <label for="">lastname</label><br>
+        <input type="text"><br>
+        <label for="">email address</label><br>
+        <input type="email"><br>
+        <label for="">password <sup>*</sup></label><br>
+        <input type="password" >
+        <p >                <input type="checkbox" class="check" id="check" onclick="giri()">
+            
+      
+<aside>
+i have read and accept the<span> terms and <br> condition <sup>*</sup> </span></aside></p>
+   <button type="button" class="register">register now</button>
+
+ 
+
+    </form>
+  
+</div>
+<p>This page uses hCaptcha. For more details, please check either Data Privacy or Legal Notice.</p>
+
+</div>
+
+
+    </div>
+<!-- 
+    <script>
+        function giri(){
+     var form = document.getElementById("form");
+     var check =document.getElementById("check").value
+     var rom = document.getElementById("rom");
+     var pattern = /^[^]+@[^]+\.[a-z]{2.3}$/;
+     if(check.match(pattern)){
+        form.classList.add("valid")
+        form.classList.remove("valid")
+     }
+     else{
+        form.classList.remove("valid")
+     }
+
+        }
+    </script> -->
+</body>
+</html>
